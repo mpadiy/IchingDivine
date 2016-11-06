@@ -1,0 +1,599 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    xmlns:font-size="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/gua_layout_static"
+    android:background="@drawable/ivory"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+    <View android:background="@drawable/copper" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/original" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+            <ImageButton android:id="@id/euo" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" />
+            <ImageButton android:id="@id/e5o" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" />
+            <ImageButton android:id="@id/e4o" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" />
+            <ImageButton android:id="@+id/e3o" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" />
+            <ImageButton android:id="@id/e2o" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" />
+            <ImageButton android:id="@id/eio" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/future" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/original"
+            android:layout_toEndOf="@id/original">
+            <ImageButton android:id="@+id/euf" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" />
+            <ImageButton android:id="@+id/e5f" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" />
+            <ImageButton android:id="@+id/e4f" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" />
+            <ImageButton android:id="@+id/e3f" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" />
+            <ImageButton android:id="@+id/e2f" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" />
+            <ImageButton android:id="@+id/eif" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" />
+        </LinearLayout>
+        <!--        upsidedown        -->
+        <!--        mutual        -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/dkgray_transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout5"
+            android:layout_below="@+id/linearLayout6"
+            android:layout_alignRight="@+id/linearLayout6"
+            android:layout_alignEnd="@+id/linearLayout6"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/future"
+            android:layout_toEndOf="@id/future">
+
+            <Button
+                android:textSize="12.0sp"
+                android:textColor="@drawable/copper"
+                android:id="@+id/mudetail"
+                android:background="#7faaaaaa"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="互卦注解"
+                android:layout_weight="1" />
+
+            <Button
+                android:textSize="12.0sp"
+                android:textColor="@drawable/copper"
+                android:id="@+id/upsdetail"
+                android:background="#7faaaaaa"
+                android:padding="3.0dip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="错卦注解"
+                android:layout_weight="1" />
+
+            <Button
+                android:textSize="12.0sp"
+                android:textColor="@drawable/copper"
+                android:id="@+id/exchdetail"
+                android:background="#7faaaaaa"
+                android:padding="3.0dip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="综卦注解"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/future"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="false"
+            android:id="@+id/linearLayout6"
+            android:layout_toRightOf="@id/future"
+            android:layout_marginLeft="9dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linearLayout3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/linearLayout"
+                android:layout_toStartOf="@+id/linearLayout"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/euex"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+
+                <ImageButton
+                    android:id="@+id/e5ex"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+
+                <ImageButton
+                    android:id="@+id/e4ex"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+
+                <ImageButton
+                    android:id="@+id/e3ex"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+
+                <ImageButton
+                    android:id="@+id/e2ex"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+
+                <ImageButton
+                    android:id="@+id/eiex"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linearLayout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/linearLayout5"
+                android:layout_alignStart="@+id/linearLayout5"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/eumut"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+
+                <ImageButton
+                    android:id="@+id/e5mut"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+
+                <ImageButton
+                    android:id="@+id/e4mut"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+
+                <ImageButton
+                    android:id="@+id/e3mut"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+
+                <ImageButton
+                    android:id="@+id/e2mut"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+
+                <ImageButton
+                    android:id="@+id/eimut"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/euups"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+
+                <ImageButton
+                    android:id="@+id/e5ups"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+
+                <ImageButton
+                    android:id="@+id/e4ups"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+
+                <ImageButton
+                    android:id="@+id/e3ups"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+
+                <ImageButton
+                    android:id="@+id/e2ups"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+
+                <ImageButton
+                    android:id="@+id/eiups"
+                    android:background="@drawable/very_small_yang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--        exhange        -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:textSize="12.0sp"
+            android:textColor="@color/control_back"
+            android:id="@+id/oritext"
+            android:background="@drawable/textview_round_border"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="本卦"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+
+        <TextView
+            android:textSize="12.0sp"
+            android:textColor="@color/control_back"
+            android:id="@+id/furtext"
+            android:background="@drawable/textview_round_border"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="变卦"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:textSize="12.0sp"
+            android:textColor="@color/control_back"
+            android:id="@+id/oriColortext_u"
+            android:background="@drawable/textview_round_border"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="上爻"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+
+        <TextView
+            android:textSize="12.0sp"
+            android:id="@+id/furtColortext_u"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="上爻"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"
+            android:background="@drawable/textview_round_border"
+            android:textColor="@color/control_back" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:textSize="12.0sp"
+            android:textColor="@color/control_back"
+            android:id="@+id/oriColortext_5"
+            android:background="@drawable/textview_round_border"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="五爻"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+
+        <TextView
+            android:textSize="12.0sp"
+            android:id="@+id/furtColortext_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="五爻"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"
+            android:background="@drawable/textview_round_border"
+            android:textColor="@color/control_back" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:textSize="12.0sp"
+            android:textColor="@color/control_back"
+            android:id="@+id/oriColortext_4"
+            android:background="@drawable/textview_round_border"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="四爻"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+
+        <TextView
+            android:textSize="12.0sp"
+            android:id="@+id/furtColortext_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="四爻"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"
+            android:background="@drawable/textview_round_border"
+            android:textColor="@color/control_back" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:textSize="12.0sp"
+            android:textColor="@color/control_back"
+            android:id="@+id/oriColortext_3"
+            android:background="@drawable/textview_round_border"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="三爻"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+
+        <TextView
+            android:textSize="12.0sp"
+            android:id="@+id/furtColortext_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="三爻"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"
+            android:background="@drawable/textview_round_border"
+            android:textColor="@color/control_back" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:textSize="12.0sp"
+            android:textColor="@color/control_back"
+            android:id="@+id/oriColortext_2"
+            android:background="@drawable/textview_round_border"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="二爻"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+
+        <TextView
+            android:textSize="12.0sp"
+            android:id="@+id/furtColortext_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="二爻"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"
+            android:background="@drawable/textview_round_border"
+            android:textColor="@color/control_back" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:textSize="12.0sp"
+            android:textColor="@color/control_back"
+            android:id="@+id/oriColortext_i"
+            android:background="@drawable/textview_round_border"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="初爻"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+
+        <TextView
+            android:textSize="12.0sp"
+            android:id="@+id/furtColortext_i"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="初爻"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"
+            android:background="@drawable/textview_round_border"
+            android:textColor="@color/control_back" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/expll">
+
+        <com.wellwood.ichingdivine.ui.customizedview.ExpandableTextView
+            android:id="@+id/expand_text_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            expandableTextView:maxCollapsedLines="2"
+            expandableTextView:animAlphaStart="1">
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:textColor="#666666" />
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_gravity="right"
+                android:background="@android:color/transparent"/>
+        </com.wellwood.ichingdivine.ui.customizedview.ExpandableTextView>
+        <com.wellwood.ichingdivine.ui.customizedview.ExpandableTextView1
+            android:id="@+id/expand_text_view1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            expandableTextView:maxCollapsedLines="2"
+            expandableTextView:animAlphaStart="1">
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:textColor="#666666" />
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_gravity="right"
+                android:background="@android:color/transparent"/>
+        </com.wellwood.ichingdivine.ui.customizedview.ExpandableTextView1>
+    </LinearLayout>
+
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llRes" android:layout_width="fill_parent" android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <RelativeLayout android:orientation="vertical" android:id="@+id/rlSave" android:padding="@dimen/rs_sav_padding" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/rs_sav_top">
+            <TextView android:textSize="@dimen/rs_sav_tsize" android:textColor="#ff222222" android:id="@+id/tvSaveTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="存档内容" />
+            <Button android:textSize="@dimen/rs_sav_hide_tsize" android:textColor="#ff121212" android:id="@+id/btnShowSave" android:background="@drawable/mainbutton2" android:layout_width="@dimen/rs_sav_hide_width" android:layout_height="@dimen/rs_sav_hide_height" android:layout_margin="4.0dip" android:text="收起" android:layout_toRightOf="@id/tvSaveTitle" />
+            <TableLayout android:id="@+id/tbSave" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_below="@id/tvSaveTitle"
+                android:layout_marginLeft="@dimen/rs_sav_top2"
+                android:layout_marginRight="@dimen/rs_sav_top2"
+                android:layout_marginTop="@dimen/rs_sav_top2">
+                <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rs_sav_top3">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rs_sav_cont_left" android:layout_marginRight="@dimen/rs_sav_top3">
+                        <TextView android:textSize="@dimen/rs_sav_cont_tsize" android:textColor="#ff222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="名称"
+                            android:id="@+id/tvSaveName" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.wellwood.ichingdivine.ui.customizedview.myNote
+                            class="package com.wellwood.ichingdivine.ui.customizedview.myNote"
+                            android:textSize="@dimen/rs_sav_cont_tsize"
+                            android:textColor="#ff333333"
+                            android:id="@+id/edtSaveName"
+                            android:background="@null"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rs_sav_top3" android:layout_marginBottom="@dimen/rs_sav_top3">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rs_sav_cont_left" android:layout_marginRight="5.0dip">
+                        <TextView android:textSize="@dimen/rs_sav_cont_tsize" android:textColor="#ff222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="问事"
+                            android:id="@+id/tvSaveDetail" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.wellwood.ichingdivine.ui.customizedview.myNote
+                            android:textSize="@dimen/rs_sav_cont_tsize" android:textColor="#ff333333" android:gravity="top" android:id="@+id/edtSaveDetail" android:background="@null" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:ems="10" android:singleLine="false"
+                            android:inputType="textMultiLine" />
+                    </LinearLayout>
+                </TableRow>
+                <TableRow android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rs_sav_top3" android:layout_marginBottom="@dimen/rs_sav_top3">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rs_sav_cont_left" android:layout_marginRight="@dimen/rs_sav_top3">
+                        <TextView android:textSize="@dimen/rs_sav_cont_tsize" android:textColor="#ff222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="占验"
+                            android:id="@+id/tvSaveFB" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.wellwood.ichingdivine.ui.customizedview.myNote
+                            android:textSize="22dp" android:textColor="#ff333333" android:gravity="top" android:id="@+id/edtSaveFeedback" android:background="@null" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:ems="10" android:singleLine="false"
+                            android:inputType="textMultiLine" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+            <Button android:textColor="#ff121212" android:id="@+id/btnSave" android:background="@drawable/feather" android:paddingRight="@dimen/rs_sav_btn_right" android:layout_width="@dimen/rs_sav_btn_width" android:layout_height="@dimen/rs_sav_btn_height" android:text="保存" android:layout_toRightOf="@id/tbSave" android:layout_alignBottom="@id/tbSave" android:onClick="onClickSave" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

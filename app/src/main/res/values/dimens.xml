@@ -1,0 +1,63 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--主页tab-->
+    <dimen name="main_bottom_tabs_padding_bottom">7dp</dimen>
+    <dimen name="main_bottom_tab_padding_top">5dp</dimen>
+    <dimen name="main_bottom_tab_font_size">16sp</dimen>
+    <dimen name="main_bottom_tab_drawable_padding">2dp</dimen>
+
+
+    <dimen name="app_bar_elevation">4dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--易经详情页面的字体大小-->
+    <dimen name="detail_title_size">18sp</dimen>
+    <!-- 列表 标题大小-->
+    <dimen name="list_title_size">16sp</dimen>
+
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="margin_48dp">48dp</dimen>
+    <dimen name="margin_56dp">56dp</dimen>
+
+    <dimen name="content_padding">12dp</dimen>
+
+    <dimen name="appbar_collaspe_height">256dp</dimen>
+
+    <!--解决各 API 版本间距不统一-->
+    <dimen name="fab_margin_right">0dp</dimen>
+    <dimen name="fab_margin_bottom">0dp</dimen>
+
+
+
+
+
+
+
+
+    <dimen name="rs_sav_tsize">18.0dip</dimen>
+    <dimen name="rs_sav_hide_width">50.0dip</dimen>
+    <dimen name="rs_sav_hide_height">24.0dip</dimen>
+    <dimen name="rs_sav_hide_tsize">14.0dip</dimen>
+    <dimen name="rs_sav_cont_tsize">14.0dip</dimen>
+    <dimen name="rs_sav_top">16.0dip</dimen>
+    <dimen name="rs_sav_padding">8.0dip</dimen>
+    <dimen name="rs_sav_top2">10.0dip</dimen>
+    <dimen name="rs_sav_top3">5.0dip</dimen>
+    <dimen name="rs_sav_cont_left">12.0dip</dimen>
+    <dimen name="rs_sav_btn_right">6.0dip</dimen>
+    <dimen name="rs_sav_btn_width">56.0dip</dimen>
+    <dimen name="rs_sav_btn_height">40.0dip</dimen>
+    <dimen name="popmenu_width">140.0dip</dimen>
+    <dimen name="popmenu_yoff">5.0dip</dimen>
+    <dimen name="dip2pix">1.0dip</dimen>
+
+</resources>

@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_iching_divine_result"
+    android:background="@drawable/ivory"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<View android:background="@drawable/copper" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+	<TextView android:textSize="28.0sp" android:textColor="@drawable/red" android:gravity="center" android:id="@+id/gua_change" android:background="@drawable/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/e63" />
+	<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<LinearLayout android:orientation="vertical" android:id="@+id/original" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<ImageButton android:id="@+id/euo" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" />
+			<ImageButton android:id="@+id/e5o" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" />
+			<ImageButton android:id="@+id/e4o" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" />
+			<ImageButton android:id="@+id/e3o" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" />
+			<ImageButton android:id="@+id/e2o" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" />
+			<ImageButton android:id="@+id/eio" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" />
+		</LinearLayout>
+		<LinearLayout android:orientation="vertical" android:id="@+id/future" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/original">
+			<ImageButton android:id="@+id/euf" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" />
+			<ImageButton android:id="@+id/e5f" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" />
+			<ImageButton android:id="@+id/e4f" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" />
+			<ImageButton android:id="@+id/e3f" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" />
+			<ImageButton android:id="@+id/e2f" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" />
+			<ImageButton android:id="@+id/eif" android:background="@drawable/small_yang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" />
+		</LinearLayout>
+	</RelativeLayout>
+	<TextView android:textSize="20.0sp" android:textColor="@drawable/black" android:id="@+id/xx" android:background="@drawable/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/e63" />
+
+	<LinearLayout android:orientation="horizontal" android:background="@drawable/dkgray_transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+		<Button android:textSize="22.0sp" android:textColor="@drawable/copper" android:id="@+id/share_btn" android:background="#7faaaaaa" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5.0dip" android:text="@string/分享"
+			android:layout_weight="1" />
+
+		<Button android:textSize="22.0sp" android:textColor="@drawable/copper" android:id="@+id/oriDetail" android:background="#7faaaaaa" android:padding="3.0dip" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5.0dip" android:text="本卦注解"
+			android:layout_weight="1" />
+
+		<Button
+			android:textSize="22.0sp"
+			android:textColor="@drawable/copper"
+			android:id="@+id/furtDetail"
+			android:background="#7faaaaaa"
+			android:padding="3.0dip"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="5.0dip"
+			android:text="变卦注解"
+			android:layout_weight="1" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:orientation="vertical"
+		android:id="@+id/expll">
+		<com.wellwood.ichingdivine.ui.customizedview.ExpandableTextView
+			android:id="@+id/expand_text_view"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			expandableTextView:maxCollapsedLines="2"
+			expandableTextView:animAlphaStart="1">
+			<TextView
+				android:id="@id/expandable_text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:fontFamily="sans-serif-light"
+				android:textSize="16sp"
+				android:textColor="#666666" />
+			<ImageButton
+				android:id="@id/expand_collapse"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="2dp"
+				android:layout_gravity="right"
+				android:background="@android:color/transparent"/>
+		</com.wellwood.ichingdivine.ui.customizedview.ExpandableTextView>
+		<View android:background="@drawable/copper" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+		<com.wellwood.ichingdivine.ui.customizedview.ExpandableTextView1
+			android:id="@+id/expand_text_view1"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			expandableTextView:maxCollapsedLines="2"
+			expandableTextView:animAlphaStart="1">
+			<TextView
+				android:id="@id/expandable_text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:fontFamily="sans-serif-light"
+				android:textSize="16sp"
+				android:textColor="#666666" />
+			<ImageButton
+				android:id="@id/expand_collapse"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="5dp"
+				android:layout_gravity="right"
+				android:background="@android:color/transparent"/>
+		</com.wellwood.ichingdivine.ui.customizedview.ExpandableTextView1>
+	</LinearLayout>
+
+
+	<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/llRes" android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:weightSum="1">
+
+		<RelativeLayout android:orientation="vertical" android:id="@+id/rlSave" android:padding="@dimen/rs_sav_padding" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rs_sav_top">
+			<TextView android:textSize="@dimen/rs_sav_tsize" android:textColor="#ff222222" android:id="@+id/tvSaveTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="存档内容" />
+			<Button android:textSize="@dimen/rs_sav_hide_tsize" android:textColor="#ff121212" android:id="@+id/btnShowSave" android:background="@drawable/mainbutton2" android:layout_width="@dimen/rs_sav_hide_width" android:layout_height="@dimen/rs_sav_hide_height" android:layout_margin="4.0dip" android:text="收起" android:layout_toRightOf="@+id/tvSaveTitle" />
+			<TableLayout android:id="@+id/tbSave" android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_below="@+id/tvSaveTitle"
+				android:layout_marginLeft="@dimen/rs_sav_top2"
+				android:layout_marginRight="@dimen/rs_sav_top2"
+				android:layout_marginTop="@dimen/rs_sav_top2">
+				<TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rs_sav_top3">
+					<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rs_sav_cont_left" android:layout_marginRight="@dimen/rs_sav_top3">
+						<TextView android:textSize="@dimen/rs_sav_cont_tsize" android:textColor="#ff222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="名称"
+							android:id="@+id/tvSaveName" />
+					</LinearLayout>
+					<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+						<com.wellwood.ichingdivine.ui.customizedview.myNote
+							class="package com.wellwood.ichingdivine.ui.customizedview.myNote"
+							android:textSize="@dimen/rs_sav_cont_tsize"
+							android:textColor="#ff333333"
+							android:id="@+id/edtSaveName"
+							android:background="@null"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:ems="10" />
+					</LinearLayout>
+				</TableRow>
+				<TableRow android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rs_sav_top3" android:layout_marginBottom="@dimen/rs_sav_top3">
+					<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rs_sav_cont_left" android:layout_marginRight="5.0dip">
+						<TextView android:textSize="@dimen/rs_sav_cont_tsize" android:textColor="#ff222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="问事"
+							android:id="@+id/tvSaveDetail" />
+					</LinearLayout>
+					<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+						<com.wellwood.ichingdivine.ui.customizedview.myNote
+							android:textSize="@dimen/rs_sav_cont_tsize" android:textColor="#ff333333" android:gravity="top" android:id="@+id/edtSaveDetail" android:background="@null" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+							android:ems="10" android:singleLine="false"
+							android:inputType="textMultiLine" />
+					</LinearLayout>
+				</TableRow>
+				<TableRow android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/rs_sav_top3" android:layout_marginBottom="@dimen/rs_sav_top3">
+					<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/rs_sav_cont_left" android:layout_marginRight="@dimen/rs_sav_top3">
+						<TextView android:textSize="@dimen/rs_sav_cont_tsize" android:textColor="#ff222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="占验"
+							android:id="@+id/tvSaveFB" />
+					</LinearLayout>
+					<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+						<com.wellwood.ichingdivine.ui.customizedview.myNote
+							android:textSize="22dp" android:textColor="#ff333333" android:gravity="top" android:id="@+id/edtSaveFeedback" android:background="@null" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+							android:ems="10" android:singleLine="false"
+							android:inputType="textMultiLine" />
+					</LinearLayout>
+				</TableRow>
+			</TableLayout>
+			<Button android:textColor="#ff121212" android:id="@+id/btnSave" android:background="@drawable/feather" android:paddingRight="@dimen/rs_sav_btn_right" android:layout_width="@dimen/rs_sav_btn_width" android:layout_height="@dimen/rs_sav_btn_height" android:text="保存" android:layout_toRightOf="@+id/tbSave" android:layout_alignBottom="@+id/tbSave" android:onClick="onClickSave" />
+
+		</RelativeLayout>
+
+
+	</LinearLayout>
+
+
+
+</LinearLayout>

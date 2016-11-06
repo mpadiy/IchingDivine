@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?><!--抽屉-->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/windowBackground">
+
+    <!--主页面-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--toolbar-->
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorPrimary"
+                    android:minHeight="?attr/actionBarSize"
+                    app:contentInsetEnd="0dp"
+                    app:contentInsetLeft="0dp"
+                    app:contentInsetRight="0dp"
+                    app:contentInsetStart="0dp"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:popupTheme="@style/MyOptionMenuStyle"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="分享"
+                            android:id="@+id/textView"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="20dp" />
+                    </RelativeLayout>
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+
+                <!--Toolbar在WebView滚动下的显示和隐藏的实现-->
+
+                <android.support.v4.widget.NestedScrollView
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                <WebView
+                    android:id="@+id/mybrowser"
+                    android:background="@color/md_light_yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                </android.support.v4.widget.NestedScrollView>
+
+
+            </FrameLayout>
+
+
+
+
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+
+    </LinearLayout>
+
+    <!--导航页-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:itemIconTint="?attr/stateSelector"
+        app:itemTextColor="?attr/stateSelector"
+        app:menu="@menu/drawer_view" />
+
+</android.support.v4.widget.DrawerLayout>
+

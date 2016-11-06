@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rl_record_item"
+	android:paddingLeft="12.0dip"
+	android:paddingRight="12.0dip"
+	android:paddingBottom="4.0dip"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout
+		android:paddingTop="13.0dip"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/datetime">
+		<TextView android:textSize="14.0dip"
+			android:textColor="#ff999999"
+			android:id="@+id/tvItemTime"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="2012-01-09 15:23" />
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="vertical"
+		android:padding="4.0dip"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/recorditem">
+		<TextView android:textSize="20.0dip"
+			android:textStyle="bold"
+			android:textColor="#ff666666"
+			android:id="@+id/tvItemName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="卦名" />
+		<TextView android:textSize="12.0dip"
+			android:textColor="@color/red"
+			android:id="@+id/tvItemNote"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="问事" />
+	</LinearLayout>
+</RelativeLayout>

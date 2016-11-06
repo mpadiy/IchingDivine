@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="toolbar" type="id" />
+    <item name="toolbar_title" type="id" />
+    <item name="swipeRefreshLayout" type="id" />
+    <item name="recyclerView" type="id" />
+    <item name="pullRecycler" type="id" />
+<item type="id" name="ori_t">false</item>
+<item type="id" name="svtext1">false</item>
+<item type="id" name="halloffame">false</item>
+<item type="id" name="sharebtn">false</item>
+<item type="id" name="e_go_gua_layout">false</item>
+<item type="id" name="oritext">false</item>
+<item type="id" name="futtext">false</item>
+<item type="id" name="gua_layout_static">false</item>
+<item type="id" name="furguatext">false</item>
+<item type="id" name="a_detail_ryt_titlebar">false</item>
+<item type="id" name="gua_detail">false</item>
+<item type="id" name="edtSaveName">false</item>
+<item type="id" name="edtSaveDetail">false</item>
+<item type="id" name="edtSaveFeedback">false</item>
+<item type="id" name="tvSaveTitle">false</item>
+<item type="id" name="tvSaveName">false</item>
+<item type="id" name="tvSaveDetail">false</item>
+<item type="id" name="tvSaveFB">false</item>
+<item type="id" name="llRes">false</item>
+<item type="id" name="expandable_text">false</item>
+<item type="id" name="expand_collapse">false</item>
+    <item type="id" name="xcount">false</item>
+    <item type="id" name="ycount">false</item>
+    <item type="id" name="zcount">false</item>
+    <item type="id" name="tv">false</item>
+    <item type="id" name="leave">false</item>
+    <item type="id" name="myViewFlipper1">false</item>
+    <item type="id" name="etree_replace_layout">false</item>
+    <item type="id" name="etree">false</item>
+    <item type="id" name="gua_map">false</item>
+    <item type="id" name="deleteGua">false</item>
+    <item type="id" name="searchxx">false</item>
+    <item type="id" name="jumpto">false</item>
+    <item type="id" name="epage">false</item>
+    <item type="id" name="gua_change">false</item>
+    <item type="id" name="gua_mutual">false</item>
+    <item type="id" name="gua_upsidedown">false</item>
+    <item type="id" name="gua_exchange">false</item>
+    <item type="id" name="icon">false</item>
+    <item type="id" name="text">false</item>
+    <item type="id" name="mPath">false</item>
+    <item type="id" name="savefilebutton">false</item>
+    <item type="id" name="cancel">false</item>
+    <item type="id" name="gua_layout">false</item>
+    <item type="id" name="body">false</item>
+    <item type="id" name="svimagebutton">false</item>
+    <item type="id" name="original">false</item>
+    <item type="id" name="eu">false</item>
+    <item type="id" name="e5">false</item>
+    <item type="id" name="e4">false</item>
+    <item type="id" name="e3">false</item>
+    <item type="id" name="e2">false</item>
+    <item type="id" name="ei">false</item>
+    <item type="id" name="svtext">false</item>
+    <item type="id" name="textall">false</item>
+    <item type="id" name="e_gua">false</item>
+    <item type="id" name="e_t">false</item>
+    <item type="id" name="e_e">false</item>
+    <item type="id" name="e_num">false</item>
+    <item type="id" name="e_num_i">false</item>
+    <item type="id" name="tmp">false</item>
+    <item type="id" name="gua_map_parent">false</item>
+    <item type="id" name="gua_name">false</item>
+    <item type="id" name="gua_image">false</item>
+    <item type="id" name="gua_gallery">false</item>
+    <item type="id" name="btn_image">false</item>
+    <item type="id" name="gua_test_title">false</item>
+    <item type="id" name="quzall">false</item>
+    <item type="id" name="quz">false</item>
+    <item type="id" name="up_gua_u">false</item>
+    <item type="id" name="up_gua_5">false</item>
+    <item type="id" name="up_gua_4">false</item>
+    <item type="id" name="down_gua_3">false</item>
+    <item type="id" name="down_gua_2">false</item>
+    <item type="id" name="down_gua_i">false</item>
+    <item type="id" name="quzqua">false</item>
+    <item type="id" name="score_button_grp">false</item>
+    <item type="id" name="score_bar">false</item>
+    <item type="id" name="game_description">false</item>
+    <item type="id" name="ansok">false</item>
+    <item type="id" name="line">false</item>
+    <item type="id" name="svpage">false</item>
+    <item type="id" name="ego">false</item>
+    <item type="id" name="menu_content">false</item>
+    <item type="id" name="speedg">false</item>
+    <item type="id" name="e_go">false</item>
+    <item type="id" name="sp_etree">false</item>
+    <item type="id" name="sg">false</item>
+    <item type="id" name="e_g2">false</item>
+    <item type="id" name="speed_gua_layout_etree">false</item>
+    <item type="id" name="speed_gua_etree">false</item>
+    <item type="id" name="test">false</item>
+    <item type="id" name="skip">false</item>
+    <item type="id" name="sTextViewTitle">false</item>
+    <item type="id" name="myDialogEditText">false</item>
+    <item type="id" name="speed_gua">false</item>
+    <item type="id" name="speed_gua_layout">false</item>
+    <item type="id" name="euo">false</item>
+    <item type="id" name="e5o">false</item>
+    <item type="id" name="e4o">false</item>
+    <item type="id" name="e3o">false</item>
+    <item type="id" name="e2o">false</item>
+    <item type="id" name="eio">false</item>
+    <item type="id" name="future">false</item>
+    <item type="id" name="euf">false</item>
+    <item type="id" name="e5f">false</item>
+    <item type="id" name="e4f">false</item>
+    <item type="id" name="e3f">false</item>
+    <item type="id" name="e2f">false</item>
+    <item type="id" name="eif">false</item>
+    <item type="id" name="xx">false</item>
+    <item type="id" name="translateBtn">false</item>
+    <item type="id" name="speedquanote">false</item>
+    <item type="id" name="share_btn">false</item>
+    <item type="id" name="myViewFlipperSZ">false</item>
+    <item type="id" name="svsz1">false</item>
+    <item type="id" name="svsz2">false</item>
+    <item type="id" name="very_small_gua_layout">false</item>
+    <item type="id" name="xxoriginal">false</item>
+    <item type="id" name="xxeuo">false</item>
+    <item type="id" name="xxe5o">false</item>
+    <item type="id" name="xxe4o">false</item>
+    <item type="id" name="xxe3o">false</item>
+    <item type="id" name="xxe2o">false</item>
+    <item type="id" name="xxeio">false</item>
+    <item type="id" name="xxrelative">false</item>
+    <item type="id" name="mybrowser">false</item>
+    <item type="id" name="xxTextGV">false</item>
+    <item type="id" name="xx_relative_gua_layout_main">false</item>
+    <item type="id" name="xx_relative_gua_layout">false</item>
+
+
+
+</resources>

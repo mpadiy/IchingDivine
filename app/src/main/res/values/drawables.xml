@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<item type="drawable" name="white">#ffe0e0e0</item>
+<item type="drawable" name="white_transparent">#7fffffff</item>
+<item type="drawable" name="flora_red">#ffa02828</item>
+<item type="drawable" name="golden">#fffbd860</item>
+<item type="drawable" name="golden_transparent">#7ffbd860</item>
+<item type="drawable" name="black">#ff000000</item>
+<item type="drawable" name="black_transparent">#5f000000</item>
+<item type="drawable" name="red">#ffcc0000</item>
+<item type="drawable" name="normal_white">#ffaaaaaa</item>
+<item type="drawable" name="half_transparent">#7faaaaaa</item>
+<item type="drawable" name="scarlet">#ffaa1717</item>
+<item type="drawable" name="yellow">#ffffff00</item>
+<item type="drawable" name="yellow_transparent">#7faaaa00</item>
+<item type="drawable" name="copper">#ffb87333</item>
+<item type="drawable" name="copper_transparent">#7fb87333</item>
+<item type="drawable" name="magenta">#ffff00ff</item>
+<item type="drawable" name="green">#ff00ff00</item>
+<item type="drawable" name="blue">#ff1717ff</item>
+<item type="drawable" name="blue_transparent">#7f0055ff</item>
+<item type="drawable" name="cyan">#ff00ffff</item>
+<item type="drawable" name="dkgray">#ff444444</item>
+<item type="drawable" name="dkgray_transparent">#7fdddddd</item>
+<item type="drawable" name="hcopper">#ff8b4513</item>
+<item type="drawable" name="hcopper_transparent">#7f8b4513</item>
+<item type="drawable" name="hhcopper_transparent">#7f994555</item>
+<item type="drawable" name="transparent">#00000000</item>
+<item type="drawable" name="ivory">#fffffffa</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

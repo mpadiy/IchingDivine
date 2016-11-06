@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/md_light_yellow" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/menu_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true">
+
+        <Button android:textSize="40.0sp"
+            android:textColor="@color/md_green2" android:layout_gravity="center" android:id="@+id/iching_divine" android:background="@drawable/transparent" android:padding="6.0dip" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/app_name" android:shadowColor="@drawable/red" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="4.0"
+            android:textStyle="bold" />
+        <Button android:textSize="40.0sp"
+            android:textColor="@color/md_dark_red" android:layout_gravity="center" android:id="@+id/etree_divine" android:background="@drawable/transparent" android:padding="6.0dip" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/etree_divine" android:shadowColor="@drawable/red" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="4.0"
+            android:textStyle="bold" />
+        <Button android:textSize="40.0sp"
+            android:textColor="@color/md_green_blue" android:layout_gravity="center" android:id="@+id/gua_practise" android:background="@drawable/transparent" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/gua_practise" android:shadowColor="@drawable/red" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="4.0"
+            android:textStyle="bold" />
+
+        <Button
+            android:textSize="40.0sp"
+            android:textColor="@color/colorAccentDarkTheme"
+            android:layout_gravity="center"
+            android:id="@+id/divine_readme"
+            android:background="@drawable/transparent"
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            android:text="@string/divine_readme"
+            android:shadowColor="@drawable/red"
+            android:shadowDx="2.0"
+            android:shadowDy="2.0"
+            android:shadowRadius="4.0"
+            android:textStyle="bold"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_below="@id/menu_content"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+</RelativeLayout>
